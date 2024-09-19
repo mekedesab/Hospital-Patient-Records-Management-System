@@ -1,25 +1,25 @@
 # Hospital-Patient-Records-Management-System
-For Efficient Management of Patient Records in Hospitals
-
+This project aims to efficiently manage patient records in hospitals by providing functionalities to store, retrieve, and summarize patient information. The program dynamically allocates memory to store patient records and offers various functions to interact with the data.
 
 
 Functions
-void menu(int size);
-  
-patientInfo *buildPatientRecords(int size);
-    Dynamically allocates memory to store generated patient information, based on size inputed by user. 
-    
-void printPatientRecords(patientInfo *patientArray, int size);
-    Prints all patient record
-    
-void printFamilyName(patientInfo *patientArray);
-    Prints based on requested family name
-    
-void summaryOfPatientRecords(patientInfo *patientArray, int size);
-    Prints summary of general information (i.e no of patients, average bill etc)
+void menu(int size)
+Displays the menu options for the user to interact with the patient records.
 
-void searchFamilyName(patientInfo *patientArray, int size);
-    searches throgh last names based on users request, it will then call printFamilyName(patientInfo *patientArray).
+patientInfo *buildPatientRecords(int size)
+Dynamically allocates memory to store generated patient information based on the size inputted by the user.
 
-void quit(patientInfo *patientArray);
-    Quits and frees memory
+void printPatientRecords(patientInfo *patientArray, int size)
+Prints all patient records stored in the array.
+
+void printFamilyName(patientInfo *patientArray)
+Prints patient records based on the requested family name.
+
+void summaryOfPatientRecords(patientInfo *patientArray, int size)
+Prints a summary of general information, such as the number of patients and the average bill.
+
+void searchFamilyName(patientInfo *patientArray, int size)
+Searches through last names based on the user’s request and calls printFamilyName(patientInfo *patientArray) to display the results.
+
+void quit(patientInfo *patientArray)
+Quits the program and frees the allocated memory.
